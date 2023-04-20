@@ -5,22 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Busca CEP</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div>
-        <form id="buscaCep" autocomplete="off">
-            <div>
+    <div class="container">
+        <div class="card">
+            <form id="buscaCep" autocomplete="off">
                 <div>
-                    <label for="cep">Digite o CEP</label>
+                    <div>
+                        <label for="cep">Digite o CEP</label>
+                    </div>
+                    <div>
+                        <input type="text" name="cep" id="cep">
+                    </div>
                 </div>
                 <div>
-                    <input type="text" name="cep" id="cep">
+                    <button type="button">Buscar CEP</button>
                 </div>
-            </div>
-            <div>
-                <button type="button">Buscar CEP</button>
-            </div>
-        </form>
+            </form>
+        </div>
+        <div class="card">
+            
+        </div>
     </div>
 </body>
 </html>
