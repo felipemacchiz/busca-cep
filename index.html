@@ -6,11 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Busca CEP</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="container">
         <div class="card">
             <form id="buscaCep" autocomplete="off">
+                <header>
+                    <h1>Buscar CEP</h2>
+                    <p>Faça a busca das informações de um CEP digitando no campo abaixo</p>
+                </header>
                 <div>
                     <div>
                         <label for="cep">Digite o CEP</label>
@@ -20,12 +25,25 @@
                     </div>
                 </div>
                 <div>
-                    <button type="button">Buscar CEP</button>
+                    <button type="button" id="btn-busca">Buscar</button>
                 </div>
             </form>
         </div>
         <div class="card">
-            
+            <div class="resultado-busca">
+                <div class="busca-vazia">
+                    <p>Digite um CEP para buscar as informações</p>
+                </div>
+                <div class="busca-concluida">
+                    <h2 class="cep"></h2>
+                    <p>Logradouro: <span class="logradouro"></span></p>
+                    <p>Bairro: <span class="bairro"></span></p>
+                    <p>Cidade: <span class="cidade"></span>-<span class="estado"></span></p>
+                </div>
+                <div class="busca-erro">
+                    <p>Este CEP não existe!</p>
+                </div>
+            </div>
         </div>
     </div>
 </body>
